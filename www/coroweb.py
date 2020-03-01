@@ -1,12 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+__author__ = 'David Yang'
+
 import asyncio, os, inspect, logging, functools
 
 from urllib import parse
 
 from aiohttp import web
 
-## apis是处理分页的模块,代码在本章页面末尾,请将apis.py放在www下以防报错
+## apis是处理分页的模块,后面会编写,可以从github先下载到www下,以防报错
 ## APIError 是指API调用时发生逻辑错误
-from www.apis import APIError
+from apis import APIError
 
 ## 编写装饰函数 @get()
 def get(path):
